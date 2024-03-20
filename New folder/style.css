@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+#page1{
+    height: 95vh;
+    width: 100%;
+    
+    
+}
+
+nav{
+    padding: 1vw 2vw;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 15%;
+}
+
+.btns{
+    gap: 20px;
+    cursor: pointer;
+}
+
+.btns h4{
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 1vw;
+    position: relative;
+    overflow: hidden;
+    
+    
+
+}
+
+.btns h4 a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    z-index: 1;
+    
+}
+
+.btns h4::after{
+    content: "";
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    transition: all 0.5s linear;
+    z-index: -1;
+}
+
+.btns h4:hover::after{
+    bottom: 0;
+   
+}
+
+.btns h4:hover a{
+    color: white;
+}
+
+.container{
+    height: 80%;
+    width: 100%;
+    
+    /* background-color: red; */
+}
+
+
+.con-box{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    /* background-color: yellow; */
+    
+}
+
+.left{
+    height: 100%;
+    width:50%;
+    /* background: #000; */
+}
+.right{
+    height: 100%;
+    width:50%;
+    /* background: #ff0000; */
+}
+
+.big{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.txt{
+    flex-direction: column;
+    text-align: left;
+    gap: 30px;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.wrap-box{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: yellow; */
+    
+}
+
+.smCon{
+    height: 80%;
+    width: 100%;
+    gap: 30px;
+}
+
+.sm-box{
+    height: 75%;
+    width: 25%;
+    position: relative;
+    /* border: 1px solid; */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.bg1{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/id/1207027323/photo/trendy-clothes-in-a-store.jpg?s=612x612&w=0&k=20&c=XppHkSVGWXu6f5PZydwPXe6QIOlx4PoGRwxT2DxFIJ0=);
+    background-size: cover;
+    filter: brightness(60%);
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+
+}
+
+.p{
+    position: absolute;
+    bottom: 16px;
+    left: 5px;
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    text-align: left;
+}
+#banner-Con{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner{
+    position: absolute;
+    height: 98%;
+    width: 79%;
+    background-image: url(./banner-03.jpg);
+    border-radius: 15px;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+#page3{
+    height: 40vh;
+    background: #000;
+    width: 100%;
+    z-index: -10;
+}
+
